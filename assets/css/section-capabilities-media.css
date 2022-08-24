@@ -5,8 +5,8 @@ section.capabilities {
 section.capabilities .container {
     flex: 1;
     display: grid;
-    grid-template-columns: var(--indentation-of-first-header) auto;
-    grid-template-rows: var(--header-2-bottom-spacing) auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
       "header cap1"
       "header cap2"
@@ -17,6 +17,14 @@ section.capabilities .container h2 {
     grid-area: header;
     margin: auto;
     padding: 1rem;
+}
+
+section.capabilities .capability h4 {
+    margin-bottom: 1em;
+}
+
+section.capabilities .capability p {
+    margin-top: 0.25em;
 }
 
 section.capabilities .wrapper:nth-child(1) {
@@ -32,12 +40,28 @@ section.capabilities .wrapper:nth-child(3) {
 }
 
 section.capabilities h2 {
-
+    color: var(--backdrop-color-alt);
 }
 
 section.capabilities .capability {
     font-size: 0.8em;
     padding: 1em;
-    color: var(--backdrop-color-alt);
-    /* color: var(--color-for-white-fonts); */
+    margin: 1em;
+    border-left: var(--backdrop-color-alt) solid 0.25em;
+}
+
+@media (max-width: 575.98px) {
+    section.capabilities .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "cap1"
+        "cap2"
+        "cap3";
+    }
+
+    section.capabilities .container h2 {
+        margin: 0;
+    }
 }
