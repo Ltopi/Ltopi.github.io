@@ -5,7 +5,6 @@
 @import url("animations.css");
 
 section.header .container{
-    background-color: var(--header-background);
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -26,7 +25,7 @@ section.intro {
     padding-bottom: 2rem;
     padding-top: 2rem;
 
-    color: white;
+    color: var(--color-for-white-fonts);
 
     font-size: 1.6rem;
 }

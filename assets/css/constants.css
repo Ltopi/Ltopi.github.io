@@ -1,8 +1,8 @@
 :root {
+    --color-for-white-fonts: #F5F5FB;
     --backdrop-color: #7AB6D2;
     --backdrop-color-alt: #32398D;
 
-    --header-background: white;
     --intro-background-color: var(--backdrop-color-alt);
 
     --background-url: url(../../assets/imgs/backdrop-smaller-narrow.jpg);
