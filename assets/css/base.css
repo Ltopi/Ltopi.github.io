@@ -1,0 +1,13 @@
+
+body {
+    margin: 0;
+    font-family: titillium-web, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}

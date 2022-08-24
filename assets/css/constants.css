@@ -1,0 +1,16 @@
+:root {
+    --backdrop-color: #7AB6D2;
+    --backdrop-color-alt: #32398D;
+
+    --header-background: white;
+    --intro-background-color: var(--backdrop-color-alt);
+
+    --background-url: url(../../assets/imgs/backdrop-smaller-narrow.jpg);
+    --font-color: black;
+    --header-height: 3rem;
+
+    --animation-period: 20s;
+    --num-supported-fragments: 4;
+    --animation-per-fragment: calc(var(--animation-period) / var(--num-supported-fragments));
+    --subheader-line-height: 1.6em;
+}

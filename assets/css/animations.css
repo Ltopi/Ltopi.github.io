@@ -1,0 +1,132 @@
+/* animations */
+
+#fragment2, #fragment3, #fragment4
+{
+  margin-top: calc(0rem - var(--subheader-line-height));
+  line-height: var(--subheader-line-height);
+}
+
+#fragment1
+{
+    line-height: var(--subheader-line-height);
+    width: 25rem;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: var(--animation-period) steps(50, end) 0s infinite frag1type;
+    animation: var(--animation-period) steps(50, end) 0s infinite frag1type;
+}
+
+@keyframes frag1type {
+
+    from {
+        width: 0;
+    }
+
+    17% {
+        width: 25em;
+    }
+
+    25% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes frag1type {
+    from {
+        width: 0;
+    }
+
+    17% {
+        width: 25em;
+    }
+
+    25% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+#fragment2 {
+    opacity: 0;
+    width: 25em;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - 3 * var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+#fragment3 {
+    opacity: 0;
+    width: 25em;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - 2 * var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+#fragment4 {
+    opacity: 0;
+    width: 25em;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+@keyframes frag2type {
+
+    from {
+        width: 0;
+        opacity: 1;
+    }
+
+    17% {
+        width: 25em;
+        opacity: 1;
+    }
+
+    25% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes frag2type {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+
+    17% {
+        width: 25em;
+        opacity: 1;
+    }
+
+    25% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 1;
+    }
+}

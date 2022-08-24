@@ -1,0 +1,30 @@
+/* media querries max-width */
+:root {
+    font-size: 28px;
+}
+
+@media (max-width: 1439.98px) {
+    :root {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1199.98px) {
+    :root {
+        font-size: 26px;
+    }
+}
+@media (max-width: 991.98px) {
+    :root {
+        font-size: 24px;
+    }
+}
+@media (max-width: 767.98px) {
+    :root {
+        font-size: 22px;
+    }
+}
+@media (max-width: 575.98px) {
+    :root {
+        font-size: 20px;
+    }
+}
