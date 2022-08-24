@@ -1,10 +1,43 @@
-section.our-focus .grid-container {
+section.capabilities {
+    background-color: var(--color-for-white-fonts);
+}
+
+section.capabilities .container {
     flex: 1;
     display: grid;
     grid-template-columns: var(--indentation-of-first-header) auto;
     grid-template-rows: var(--header-2-bottom-spacing) auto;
     grid-template-areas: 
-      "header"
-      "focus-icon description";
-    margin-top: var(--header-bottom-spacing);
+      "header cap1"
+      "header cap2"
+      "header cap3";
+}
+
+section.capabilities .container h2 {
+    grid-area: header;
+    margin: auto;
+    padding: 1rem;
+}
+
+section.capabilities .wrapper:nth-child(1) {
+    grid-area: cap1;
+}
+
+section.capabilities .wrapper:nth-child(2) {
+    grid-area: cap2;
+}
+
+section.capabilities .wrapper:nth-child(3) {
+    grid-area: cap3;
+}
+
+section.capabilities h2 {
+
+}
+
+section.capabilities .capability {
+    font-size: 0.8em;
+    padding: 1em;
+    color: var(--backdrop-color-alt);
+    /* color: var(--color-for-white-fonts); */
 }

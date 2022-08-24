@@ -3,6 +3,7 @@
 @import url("root-font-size-media.css");
 @import url("container-max-width-media.css");
 @import url("section-our-focus-media.css");
+@import url("section-capabilities-media.css");
 @import url("animations.css");
 
 section.header .container{
