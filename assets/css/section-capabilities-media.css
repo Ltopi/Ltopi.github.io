@@ -1,0 +1,10 @@
+section.our-focus .grid-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: var(--indentation-of-first-header) auto;
+    grid-template-rows: var(--header-2-bottom-spacing) auto;
+    grid-template-areas: 
+      "header"
+      "focus-icon description";
+    margin-top: var(--header-bottom-spacing);
+}

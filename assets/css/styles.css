@@ -2,6 +2,7 @@
 @import url("base.css");
 @import url("root-font-size-media.css");
 @import url("container-max-width-media.css");
+@import url("section-our-focus-media.css");
 @import url("animations.css");
 
 section.header .container{
@@ -27,10 +28,11 @@ section.intro {
 
     color: var(--color-for-white-fonts);
 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 section.intro .fragments {
     margin-top: 1rem;
     font-size: 0.8em;
+    max-width: 100%;
 }

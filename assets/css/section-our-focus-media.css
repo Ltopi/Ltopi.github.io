@@ -1,0 +1,45 @@
+section.our-focus {
+    --icon-font-size: 3em;
+    --indentation-of-first-header: calc(var(--icon-font-size) + 1em)
+}
+
+section.our-focus .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 991.98px) {
+    section.our-focus .flex-wrapper {
+        flex-direction: column;
+    }
+}
+
+section.our-focus .flex-wrapper .flex-item {
+    flex: 1;
+    display: grid;
+    grid-template-columns: var(--indentation-of-first-header) auto;
+    grid-template-rows: var(--header-2-bottom-spacing) auto;
+    grid-template-areas: 
+      "focus-icon header"
+      "focus-icon description";
+    margin-top: var(--header-bottom-spacing);
+}
+
+section.our-focus .flex-wrapper .flex-item h4 {
+    grid-area: header;
+}
+
+section.our-focus .flex-wrapper .flex-item i {
+    font-size: var(--icon-font-size);
+    color: var(--backdrop-color-alt);
+    
+    grid-area: focus-icon;
+    margin-right: 0.25em;
+    text-align: center;
+}
+
+section.our-focus .flex-wrapper .flex-item p {
+    font-size: 0.75em;
+    grid-area: description;
+    margin-top: 0;
+}
