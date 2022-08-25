@@ -47,3 +47,9 @@ section.our-focus .flex-wrapper .flex-item p {
     grid-area: description;
     margin-top: 0;
 }
+
+@media (max-width: 991.98px) {
+    section.our-focus .flex-wrapper .flex-item p {
+        font-size: 1em;
+    }
+}
