@@ -61,14 +61,14 @@ section.intro .fragments {
 /* Privacy policy */
 section.privacy-policy {
     background-color: var(--color-for-white-fonts);
-    font-size: 0.6em;
+    font-size: 0.75em;
 }
 
 section.privacy-policy h1,
 section.privacy-policy h2,
 section.privacy-policy h3 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 .p-indent {
     margin-left: 1em;
