@@ -28,3 +28,13 @@
         font-size: 20px;
     }
 }
+@media (max-width: 479.98px) {
+    :root {
+        font-size: 16px;
+    }
+}
+@media (max-width: 319.98px) {
+    :root {
+        font-size: 14px;
+    }
+}

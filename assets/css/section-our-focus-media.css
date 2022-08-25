@@ -3,6 +3,10 @@ section.our-focus {
     --indentation-of-first-header: calc(var(--icon-font-size) + 1em)
 }
 
+section.our-focus h2 {
+    padding: 1rem;
+}
+
 section.our-focus .flex-wrapper {
     display: flex;
     flex-direction: row;

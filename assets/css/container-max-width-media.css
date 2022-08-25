@@ -1,5 +1,11 @@
 /* Media querries min-width */
 
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
