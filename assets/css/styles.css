@@ -52,7 +52,7 @@ section.intro .fragments {
     max-width: 100%;
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 575.98px) {
     section.intro .fragments {
         font-size: 0.6em;
     }
