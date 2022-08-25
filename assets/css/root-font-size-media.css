@@ -1,11 +1,11 @@
 /* media querries max-width */
 :root {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 @media (max-width: 1439.98px) {
     :root {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
 @media (max-width: 1199.98px) {
@@ -30,11 +30,11 @@
 }
 @media (max-width: 479.98px) {
     :root {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (max-width: 319.98px) {
     :root {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

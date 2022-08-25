@@ -13,6 +13,10 @@
     padding: var(--container-padding);
 }
 
+b {
+    font-size: 1.1em;
+}
+
 section.header .container{
     padding-bottom: 0;
     padding-top: 0;
@@ -35,13 +39,23 @@ section.intro {
 
     color: var(--color-for-white-fonts);
 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+
+section.intro h1 {
+    line-height: 1.3em;
 }
 
 section.intro .fragments {
     margin-top: 1rem;
     font-size: 0.8em;
     max-width: 100%;
+}
+
+@media (max-width: 479.98px) {
+    section.intro .fragments {
+        font-size: 0.5em;
+    }
 }
 
 /* Privacy policy */

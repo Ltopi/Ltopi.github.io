@@ -12,7 +12,7 @@
     --animation-period: 20s;
     --num-supported-fragments: 4;
     --animation-per-fragment: calc(var(--animation-period) / var(--num-supported-fragments));
-    --subheader-line-height: 1.6em;
+    --subheader-line-height: 2em;
 
     --container-padding: 2rem;
 

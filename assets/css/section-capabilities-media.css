@@ -44,7 +44,6 @@ section.capabilities h2 {
 }
 
 section.capabilities .capability {
-    font-size: 0.8em;
     padding: 1em;
     margin: 1em;
     border-left: var(--backdrop-color-alt) solid 0.25em;
