@@ -4,7 +4,14 @@
 @import url("container-max-width-media.css");
 @import url("section-our-focus-media.css");
 @import url("section-capabilities-media.css");
+@import url("section-cta-media.css");
+@import url("footer.css");
 @import url("animations.css");
+
+.container {
+    margin: auto;
+    padding: var(--container-padding);
+}
 
 section.header .container{
     padding-bottom: 0;
@@ -36,4 +43,15 @@ section.intro .fragments {
     margin-top: 1rem;
     font-size: 0.8em;
     max-width: 100%;
+}
+
+/* Privacy policy */
+section.privacy-policy {
+    background-color: var(--color-for-white-fonts);
+    font-size: 0.6em;
+}
+
+section.privacy-policy h1, h2, h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

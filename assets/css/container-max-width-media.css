@@ -1,10 +1,5 @@
 /* Media querries min-width */
 
-.container {
-    margin: auto;
-    padding: var(--container-padding);
-}
-
 @media (min-width: 576px) {
     .container {
         max-width: 540px;

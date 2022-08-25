@@ -1,0 +1,17 @@
+section.cta {
+    background-color: var(--color-for-white-fonts);
+    padding: var(--container-padding);
+}
+
+section.cta .container {
+    background-color: var(--backdrop-color-alt);
+    color: var(--color-for-white-fonts);
+}
+
+section.cta h1 {
+    margin-bottom: 0.5em;
+}
+
+section.cta .email-address {
+    color: var(--color-light-green);
+}
