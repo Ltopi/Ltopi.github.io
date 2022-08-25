@@ -43,6 +43,7 @@ section.our-focus .flex-wrapper .flex-item i {
 }
 
 section.our-focus .flex-wrapper .flex-item p {
+    font-size: 0.9em;
     grid-area: description;
     margin-top: 0;
 }
