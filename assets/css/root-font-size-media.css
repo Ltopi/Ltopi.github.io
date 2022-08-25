@@ -30,11 +30,11 @@
 }
 @media (max-width: 479.98px) {
     :root {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media (max-width: 319.98px) {
     :root {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
