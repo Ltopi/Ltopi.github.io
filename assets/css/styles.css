@@ -46,6 +46,10 @@ main h1 {
     line-height: 1.3em;
 }
 
+main p {
+    font-size: 0.8em;
+}
+
 main .fragments {
     margin-top: 1rem;
     font-size: 0.8em;

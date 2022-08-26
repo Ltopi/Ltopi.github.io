@@ -24,7 +24,7 @@ section.capabilities .capability h4 {
 }
 
 section.capabilities .capability p {
-    margin-top: 0.25em;
+    margin-top: 0.5em;
 }
 
 section.capabilities .wrapper:nth-child(1) {
