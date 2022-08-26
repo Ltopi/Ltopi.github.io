@@ -48,5 +48,9 @@ footer .copyright-grid-item {
     border-top: var(--backdrop-color-alt) solid 1px;
 }
 footer .copyright-grid-item a {
-    color: var(--color-light-green);
+    font-weight: 700;
+    color: var(--backdrop-color-alt);
+}
+footer .copyright-grid-item a:hover {
+    text-decoration: underline;
 }

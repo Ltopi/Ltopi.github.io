@@ -28,7 +28,7 @@ section.header .logo {
     margin-bottom: 0.5rem;
 }
 
-section.intro {
+main {
     background-color: var(--intro-background-color);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -42,18 +42,18 @@ section.intro {
     font-size: 1.6rem;
 }
 
-section.intro h1 {
+main h1 {
     line-height: 1.3em;
 }
 
-section.intro .fragments {
+main .fragments {
     margin-top: 1rem;
     font-size: 0.8em;
     max-width: 100%;
 }
 
 @media (max-width: 575.98px) {
-    section.intro .fragments {
+    main .fragments {
         font-size: 0.6em;
     }
 }
