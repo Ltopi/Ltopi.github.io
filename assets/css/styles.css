@@ -19,18 +19,18 @@ b {
     font-size: 1.1em;
 }
 
-section.header .container{
+nav .container{
     padding-bottom: 0;
     padding-top: 0;
 }
 
-section.header .logo {
+nav .logo {
     height: var(--header-height);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-main {
+header {
     background-color: var(--intro-background-color);
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -40,35 +40,35 @@ main {
     font-size: 1.4rem;
 }
 
-main h1 {
+header h1 {
     line-height: 1.3em;
 }
 
-main p {
+header p {
     font-size: 0.8em;
 }
 
-main .fragments {
+header .fragments {
     margin-top: 1rem;
     font-size: 0.8em;
     max-width: 100%;
 }
 
 @media (max-width: 575.98px) {
-    main .fragments {
+    header .fragments {
         font-size: 0.6em;
     }
 }
 
 /* Privacy policy */
-section.privacy-policy {
+main.privacy-policy {
     background-color: var(--color-for-white-fonts);
     font-size: 0.75em;
 }
 
-section.privacy-policy h1,
-section.privacy-policy h2,
-section.privacy-policy h3 {
+main.privacy-policy h1,
+main.privacy-policy h2,
+main.privacy-policy h3 {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
 }

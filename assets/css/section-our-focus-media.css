@@ -36,9 +36,8 @@ section.our-focus .flex-wrapper .flex-item h4 {
 section.our-focus .flex-wrapper .flex-item i {
     font-size: var(--icon-font-size);
     color: var(--backdrop-color-alt);
-    
+
     grid-area: focus-icon;
-    margin-right: 0.25em;
     text-align: center;
 }
 
