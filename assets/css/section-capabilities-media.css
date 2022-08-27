@@ -40,13 +40,13 @@ section.capabilities .wrapper:nth-child(3) {
 }
 
 section.capabilities h2 {
-    color: var(--backdrop-color-alt);
+    color: var(--background-color);
 }
 
 section.capabilities .capability {
     padding: 1em;
     margin: 1em;
-    border-left: var(--backdrop-color-alt) solid 0.25em;
+    border-left: var(--background-color) solid 0.25em;
 }
 
 @media (max-width: 767.98px) {

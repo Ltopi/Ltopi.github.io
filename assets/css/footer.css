@@ -1,6 +1,6 @@
 footer {
     background-color: white;
-    color: var(--backdrop-color-alt);
+    color: var(--background-color);
     font-size: 0.875rem;
     /* padding-top: 2rem; */
 }
@@ -19,7 +19,7 @@ footer .container {
 
 footer a {
     text-decoration: none;
-    color: var(--backdrop-color-alt);
+    color: var(--background-color);
 }
 
 footer .grid-item {
@@ -45,11 +45,11 @@ footer .copyright-grid-item {
     margin-top: 1.2rem;
     grid-area: copyright;
     font-size: 0.75em;
-    border-top: var(--backdrop-color-alt) solid 1px;
+    border-top: var(--background-color) solid 1px;
 }
 footer .copyright-grid-item a {
     font-weight: 700;
-    color: var(--backdrop-color-alt);
+    color: var(--background-color);
 }
 footer .copyright-grid-item a:hover {
     text-decoration: underline;

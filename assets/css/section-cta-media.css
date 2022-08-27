@@ -4,7 +4,7 @@ section.cta {
 }
 
 section.cta .container {
-    background-color: var(--backdrop-color-alt);
+    background-color: var(--background-color);
     color: var(--color-for-white-fonts);
 }
 
