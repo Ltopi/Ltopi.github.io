@@ -1,0 +1,579 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mDbRS.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?96833804');
+    src: url('../font/fontello.woff2?96833804') format('woff2'),
+         url('../font/fontello.ttf?96833804') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?96833804#fontello') format('svg');
+    }
+  }
+  */
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    /* margin-right: .2em; */
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    /* margin-left: .2em; */
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-search:before { content: '\e800'; } /* '' */
+  .icon-tablet:before { content: '\f10a'; } /* '' */
+  .icon-database:before { content: '\f1c0'; } /* '' */
+  .icon-facebook-official:before { content: '\f230'; } /* '' */
+  .icon-twitter-squared:before { content: '\f304'; } /* '' */
+  .icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+  
+:root {
+    --color-for-white-fonts: #F5F5FB;
+    --color-light-green: #5BAF5C;
+    --backdrop-color: #7AB6D2;
+    --backdrop-color-alt: #32398D;
+
+    --intro-background-color: var(--backdrop-color-alt);
+
+    --font-color: black;
+    --header-height: 2rem;
+
+    --animation-period: 20s;
+    --num-supported-fragments: 4;
+    --animation-per-fragment: calc(var(--animation-period) / var(--num-supported-fragments));
+    --subheader-line-height: 2em;
+
+    --container-padding: 2rem;
+
+    --header-2-bottom-spacing: 1.6em;
+}
+:root {
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Titillium Web",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+/* media querries max-width */
+:root {
+    font-size: 30px;
+}
+
+@media (max-width: 1439.98px) {
+    :root {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1199.98px) {
+    :root {
+        font-size: 26px;
+    }
+}
+@media (max-width: 991.98px) {
+    :root {
+        font-size: 24px;
+    }
+}
+@media (max-width: 767.98px) {
+    :root {
+        font-size: 22px;
+    }
+}
+@media (max-width: 575.98px) {
+    :root {
+        font-size: 20px;
+    }
+}
+@media (max-width: 479.98px) {
+    :root {
+        font-size: 16px;
+    }
+}
+@media (max-width: 319.98px) {
+    :root {
+        font-size: 14px;
+    }
+}
+/* Media querries min-width */
+
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 480px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}section.our-focus {
+    --icon-font-size: 3em;
+    --indentation-of-first-header: calc(var(--icon-font-size) + 1em)
+}
+
+section.our-focus h2 {
+    padding: 1rem;
+}
+
+section.our-focus .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 991.98px) {
+    section.our-focus .flex-wrapper {
+        flex-direction: column;
+    }
+}
+
+section.our-focus .flex-wrapper .flex-item {
+    flex: 1;
+    display: grid;
+    grid-template-columns: var(--indentation-of-first-header) auto;
+    grid-template-rows: var(--header-2-bottom-spacing) auto;
+    grid-template-areas: 
+      "focus-icon header"
+      "focus-icon description";
+    margin-top: 1em;
+}
+
+section.our-focus .flex-wrapper .flex-item h4 {
+    grid-area: header;
+}
+
+section.our-focus .flex-wrapper .flex-item i {
+    font-size: var(--icon-font-size);
+    color: var(--backdrop-color-alt);
+
+    grid-area: focus-icon;
+    text-align: center;
+}
+
+section.our-focus .flex-wrapper .flex-item p {
+    font-size: 0.9em;
+    grid-area: description;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 991.98px) {
+    section.our-focus .flex-wrapper .flex-item p {
+        font-size: 1em;
+    }
+}
+section.capabilities {
+    background-color: var(--color-for-white-fonts);
+}
+
+section.capabilities .container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header cap1"
+      "header cap2"
+      "header cap3";
+}
+
+section.capabilities .container h2 {
+    grid-area: header;
+    margin: auto;
+    padding: 1rem;
+}
+
+section.capabilities .capability h4 {
+    margin-bottom: 1em;
+}
+
+section.capabilities .capability p {
+    margin-top: 0.5em;
+}
+
+section.capabilities .wrapper:nth-child(1) {
+    grid-area: cap1;
+}
+
+section.capabilities .wrapper:nth-child(2) {
+    grid-area: cap2;
+}
+
+section.capabilities .wrapper:nth-child(3) {
+    grid-area: cap3;
+}
+
+section.capabilities h2 {
+    color: var(--backdrop-color-alt);
+}
+
+section.capabilities .capability {
+    padding: 1em;
+    margin: 1em;
+    border-left: var(--backdrop-color-alt) solid 0.25em;
+}
+
+@media (max-width: 767.98px) {
+    section.capabilities .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "cap1"
+        "cap2"
+        "cap3";
+    }
+
+    section.capabilities .container h2 {
+        margin: 0;
+    }
+}section.cta {
+    background-color: var(--color-for-white-fonts);
+    padding: var(--container-padding);
+}
+
+section.cta .container {
+    background-color: var(--backdrop-color-alt);
+    color: var(--color-for-white-fonts);
+}
+
+section.cta h1 {
+    margin-bottom: 0.5em;
+}
+
+section.cta .email-address {
+    color: var(--color-light-green);
+}footer {
+    background-color: white;
+    color: var(--backdrop-color-alt);
+    font-size: 0.875rem;
+    /* padding-top: 2rem; */
+}
+
+footer .container {
+    display: grid;
+    padding-bottom: calc(var(--container-padding) / 2);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header hiring"
+      "sitemap hiring"
+      "social hiring"
+      "copyright copyright";
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--backdrop-color-alt);
+}
+
+footer .grid-item {
+    padding-top: 1.2rem;
+}
+
+footer .header-grid-item {
+    grid-area: header;
+    padding: 0;
+}
+footer .sitemap-grid-item { grid-area: sitemap; }
+footer .social-grid-item {
+    grid-area: social;
+    font-size: 2em;
+}
+footer .hiring-grid-item {
+    grid-area: hiring;
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+footer .copyright-grid-item {
+    margin-top: 1.2rem;
+    grid-area: copyright;
+    font-size: 0.75em;
+    border-top: var(--backdrop-color-alt) solid 1px;
+}
+footer .copyright-grid-item a {
+    font-weight: 700;
+    color: var(--backdrop-color-alt);
+}
+footer .copyright-grid-item a:hover {
+    text-decoration: underline;
+}/* animations */
+
+#fragment1, #fragment2, #fragment3, #fragment4 {
+    max-width: 100%;
+}
+
+#fragment2, #fragment3, #fragment4
+{
+  margin-top: calc(0rem - var(--subheader-line-height));
+  line-height: var(--subheader-line-height);
+}
+
+#fragment1
+{
+    line-height: var(--subheader-line-height);
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: var(--animation-period) steps(50, end) 0s infinite frag1type;
+    animation: var(--animation-period) steps(50, end) 0s infinite frag1type;
+}
+
+@keyframes frag1type {
+
+    from {
+        width: 0;
+    }
+
+    17% {
+        width: 25em;
+    }
+
+    25% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes frag1type {
+    from {
+        width: 0;
+    }
+
+    17% {
+        width: 25em;
+    }
+
+    25% {
+        width: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+#fragment2 {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - 3 * var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+#fragment3 {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - 2 * var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+#fragment4 {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    --animation-start-time: calc(var(--animation-period) - var(--animation-per-fragment));
+    -webkit-animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+
+    animation: frag2type var(--animation-period) steps(50, end) var(--animation-start-time) infinite;
+}
+
+@keyframes frag2type {
+
+    from {
+        width: 0;
+        opacity: 1;
+    }
+
+    17% {
+        width: 25em;
+        opacity: 1;
+    }
+
+    25% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes frag2type {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+
+    17% {
+        width: 25em;
+        opacity: 1;
+    }
+
+    25% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 1;
+    }
+}
+
+.container {
+    margin: auto;
+    padding: var(--container-padding);
+}
+
+b {
+    font-size: 1.1em;
+}
+
+nav .container{
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    height: var(--header-height);
+}
+
+nav .logo {
+    height: 100%;
+    width: auto;
+}
+
+header {
+    background-color: var(--intro-background-color);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    color: var(--color-for-white-fonts);
+
+    font-size: 1.4rem;
+}
+
+header h1 {
+    line-height: 1.3em;
+}
+
+header p {
+    font-size: 0.8em;
+}
+
+header .fragments {
+    margin-top: 1rem;
+    font-size: 0.8em;
+    max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    header .fragments {
+        font-size: 0.6em;
+    }
+}
+
+/* Privacy policy */
+main.privacy-policy {
+    background-color: var(--color-for-white-fonts);
+    font-size: 0.75em;
+}
+
+main.privacy-policy h1,
+main.privacy-policy h2,
+main.privacy-policy h3 {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.p-indent {
+    margin-left: 1em;
+}
