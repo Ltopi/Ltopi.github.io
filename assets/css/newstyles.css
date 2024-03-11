@@ -1,5 +1,5 @@
 @import url("ubuntu-google-fonts.css");
-@import url("fontello-fonts.css");
+@import url("fontello.css");
 @import url("constants.css");
 @import url("base.css");
 @import url("root-font-size-media.css");
@@ -32,14 +32,17 @@ header div.logo-container .image-container {
     height: 100%;
 
     /* Overflow logo to landing image */
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
 
+    padding: 1.75rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     background-color: var(--bg-color);
 }
 
 header div.logo-container img {
+    width: 100%;
     height: auto;
-    width: var(--logo-about-us-content-width);
     max-width: 100%;
 }
 
@@ -71,6 +74,18 @@ header nav li a {
     font-size: 0.75rem;
 }
 
+header nav li.active a {
+    text-underline-offset: 3px;
+    text-decoration: underline;
+    text-decoration-color: var(--color-green);
+    text-decoration-thickness: 10px;
+}
+
+header nav li:hover a {
+    font-weight: 700;
+    color: var(--color-green);
+}
+
 /* About us section */
 
 /* Animation used in section */
@@ -89,6 +104,9 @@ main section.about-us .container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    background-blend-mode: overlay;
+    background-color: rgba(7, 166, 183, .1);
     height: var(--landing-image-height);
 
     position: relative;
@@ -97,27 +115,30 @@ main section.about-us .container {
 
 main section.about-us .about-us-container {
     width: var(--logo-about-us-container-width);
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    padding: 0.75rem;
+    padding: 1.75rem;
     position: absolute;
-    bottom: -1.5rem;
+    bottom: -1.75rem;
     left: 5%;
 
     background-color: var(--bg-color);
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 }
 
 main section.about-us .about-us-container h1 {
-    width: var(--logo-about-us-content-width);
+    width: 100%;
 
     margin-top: 1rem;
 }
 
 main section.about-us .about-us-container .hr-container {
-    width: var(--logo-about-us-content-width);
+    width: 100%;
 }
 
 main section.about-us .about-us-container hr.animated {
@@ -127,20 +148,34 @@ main section.about-us .about-us-container hr.animated {
     border: 5px solid var(--color-green);
 }
 
-
 main section.about-us .about-us-container p {
-    width: var(--logo-about-us-content-width);
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 main section.about-us .about-us-container .button-container {
-    margin-bottom: 1rem;
-    width: var(--logo-about-us-content-width);
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 main section.about-us .about-us-container button {
-    float: left;
+    font-weight: lighter;
+    background: var(--bg-color);
+    border: solid 1px var(--color-brand-dark);
+    padding: 0.7em;
+    font-size: 0.9rem;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.about-us .about-us-container button i {
+    font-size: 0.5rem;
+    margin-left: .3rem;
+    color: var(--color-green);
 }
 
 main section.about-us div.separator {
@@ -150,8 +185,30 @@ main section.about-us div.separator {
     z-index: -2;
 }
 
+/* Section highlight */
 
+main section.highlight .container {
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "empty empty topright"
+        "empty2 highlightcontent empty3"
+        "bottomleft empty4 empty4";
+}
 
+main section.highlight .container .highlight-container {
+    grid-area: highlightcontent;
+}
+
+main section.highlight .container img.top-right {
+    grid-area: topright;
+}
+
+main section.highlight .container img.bottom-left {
+    grid-area: bottomleft;
+}
 
 
 /* header {

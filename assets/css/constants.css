@@ -3,11 +3,13 @@
     --nav-height: 7.5rem;
     --landing-image-height: 30.5rem;
     --landing-separator-height: 6.4rem;
-    --logo-about-us-container-width: 46%;
+    --logo-about-us-container-width: 40%;
     --logo-about-us-content-width: 85%;
 
     /* Colors */
     --bg-color: #FEFEFF;
+    --bg-color-light: #EDEDF9;
+    --color-brand-dark: #23214B;
     --color-green: #07A6B7;
     --font-color: #141227;
 

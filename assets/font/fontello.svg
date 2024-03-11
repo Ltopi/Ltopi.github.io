@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="right-open-1" unicode="&#xe801;" d="M618 361l-414-415q-11-10-25-10t-25 10l-93 93q-11 11-11 25t11 25l296 297-296 296q-11 11-11 25t11 25l93 93q10 11 25 11t25-11l414-414q10-11 10-25t-10-25z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="facebook-rect" unicode="&#xf301;" d="M183 850c-102 0-183-81-183-183l0-634c0-102 81-183 183-183l344 0 0 391-104 0 0 141 104 0 0 120c0 94 61 181 201 181 57 0 100-5 100-5l-4-132s-43 1-90 1c-50 0-58-24-58-62l0-103 152 0-6-141-146 0 0-391 141 0c102 0 183 81 183 183l0 634c0 102-81 183-183 183l-634 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="linkedin-rect" unicode="&#xf31b;" d="M196 850c-108 0-196-88-196-196l0-608c0-108 88-196 196-196l608 0c107 0 196 88 196 196l0 608c0 108-89 196-196 196l-608 0z m49-165c52 0 84-34 85-79 0-43-33-78-86-78l-1 0c-50 0-83 35-83 78 0 45 34 79 85 79z m445-208c100 0 174-65 174-205l0-260-151 0 0 243c0 61-22 102-76 102-42 0-67-28-78-55-4-10-5-23-5-37l0-253-151 0s2 411 0 454l151 0 0-64c20 31 56 75 136 75z m-521-11l151 0 0-454-151 0 0 454z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
