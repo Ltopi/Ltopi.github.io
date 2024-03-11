@@ -1,5 +1,5 @@
 :root {
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 html {
@@ -8,10 +8,15 @@ html {
 
 body {
     margin: 0;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 200;
     color: var(--font-color);
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
 }
 
 h1,

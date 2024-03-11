@@ -1,14 +1,9 @@
-@import url("google-fonts.css");
+@import url("ubuntu-google-fonts.css");
 @import url("fontello-fonts.css");
 @import url("constants.css");
 @import url("base.css");
 @import url("root-font-size-media.css");
 @import url("container-max-width-media.css");
-
-:root {
-    --logo-about-us-container-width: 46%;
-    --logo-about-us-content-width: 85%;
-}
 
 /* Header Styles */
 header .container {
@@ -18,7 +13,7 @@ header .container {
     /* to position the navbar */
     position: relative;
 
-    background-color: green;
+    background-color: var(--bg-color);
 }
 
 header div.logo-container {
@@ -26,7 +21,7 @@ header div.logo-container {
     width: var(--logo-about-us-container-width);
     height: 100%;
 
-    background-color: red;
+    background-color: var(--bg-color);
 }
 
 header div.logo-container .image-container {
@@ -39,7 +34,7 @@ header div.logo-container .image-container {
     /* Overflow logo to landing image */
     margin-top: 1.5rem;
 
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 header div.logo-container img {
@@ -56,8 +51,10 @@ header nav {
 
 header nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
     overflow: hidden;
 }
 
@@ -67,16 +64,25 @@ header nav li {
 
 header nav li a {
     display: block;
-    padding: 8px;
+    margin-left: 1rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
 }
 
 /* About us section */
 
-main section.about-us {
-    background-image: pink;
-    z-index: -1;
-}
+/* Animation used in section */
+@keyframes expand {
+    from {
+        transform: scaleX(0);
+    }
 
+    to {
+        transform: scaleX(1);
+    }
+}
 
 main section.about-us .container {
     background: url('../imgs/landing-version-1.jpg');
@@ -86,10 +92,10 @@ main section.about-us .container {
     height: var(--landing-image-height);
 
     position: relative;
+    z-index: -1;
 }
 
 main section.about-us .about-us-container {
-    background: yellow;
     width: var(--logo-about-us-container-width);
     display: flex;
     justify-content: center;
@@ -100,24 +106,48 @@ main section.about-us .about-us-container {
     position: absolute;
     bottom: -1.5rem;
     left: 5%;
-}
 
+    background-color: var(--bg-color);
+}
 
 main section.about-us .about-us-container h1 {
     width: var(--logo-about-us-content-width);
+
+    margin-top: 1rem;
 }
 
+main section.about-us .about-us-container .hr-container {
+    width: var(--logo-about-us-content-width);
+}
+
+main section.about-us .about-us-container hr.animated {
+    width: 1.5rem;
+    margin: 0;
+    animation: expand .5s ease-in-out;
+    border: 5px solid var(--color-green);
+}
+
+
 main section.about-us .about-us-container p {
+    width: var(--logo-about-us-content-width);
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+main section.about-us .about-us-container .button-container {
+    margin-bottom: 1rem;
     width: var(--logo-about-us-content-width);
 }
 
 main section.about-us .about-us-container button {
-    width: var(--logo-about-us-content-width);
+    float: left;
 }
 
 main section.about-us div.separator {
     height: var(--landing-separator-height);
-    background: pink;
+
+    position: relative;
+    z-index: -2;
 }
 
 

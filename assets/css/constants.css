@@ -3,8 +3,13 @@
     --nav-height: 7.5rem;
     --landing-image-height: 30.5rem;
     --landing-separator-height: 6.4rem;
+    --logo-about-us-container-width: 46%;
+    --logo-about-us-content-width: 85%;
 
-
+    /* Colors */
+    --bg-color: #FEFEFF;
+    --color-green: #07A6B7;
+    --font-color: #141227;
 
 
 
@@ -22,7 +27,7 @@
 
     --intro-background-color: var(--background-color);
 
-    --font-color: black;
+    /* --font-color: black; */
     --header-height: 2rem;
 
     --animation-period: 20s;
@@ -33,4 +38,5 @@
     --container-padding: 2rem;
 
     --header-2-bottom-spacing: 1.6em;
+
 }
