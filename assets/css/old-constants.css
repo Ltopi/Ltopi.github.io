@@ -1,14 +1,4 @@
 :root {
-    /* Section sizes */
-    --nav-height: 7.5rem;
-    --landing-image-height: 30.5rem;
-    --landing-separator-height: 6.4rem;
-
-
-
-
-
-
     --color-for-white-fonts: #F5F5FB;
     /* --color-light-green: #5BAF5C; */
     /* Using this color to achieve contrast accessibility targets */

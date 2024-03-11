@@ -1,6 +1,6 @@
 @import url("google-fonts.css");
 @import url("fontello-fonts.css");
-@import url("constants.css");
+@import url("old-constants.css");
 @import url("base.css");
 @import url("root-font-size-media.css");
 @import url("container-max-width-media.css");
@@ -19,7 +19,7 @@ b {
     font-size: 1.1em;
 }
 
-nav .container{
+nav .container {
     padding-bottom: 0.8rem;
     padding-top: 0.8rem;
     height: var(--header-height);
@@ -72,6 +72,7 @@ main.privacy-policy h3 {
     margin-top: 0.75em;
     margin-bottom: 0.75em;
 }
+
 .p-indent {
     margin-left: 1em;
 }

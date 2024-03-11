@@ -1,0 +1,176 @@
+@import url("google-fonts.css");
+@import url("fontello-fonts.css");
+@import url("constants.css");
+@import url("base.css");
+@import url("root-font-size-media.css");
+@import url("container-max-width-media.css");
+
+:root {
+    --logo-about-us-container-width: 46%;
+    --logo-about-us-content-width: 85%;
+}
+
+/* Header Styles */
+header .container {
+    height: var(--nav-height);
+    padding-bottom: 0;
+    padding-top: 0;
+    /* to position the navbar */
+    position: relative;
+
+    background-color: green;
+}
+
+header div.logo-container {
+    float: left;
+    width: var(--logo-about-us-container-width);
+    height: 100%;
+
+    background-color: red;
+}
+
+header div.logo-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    /* Overflow logo to landing image */
+    margin-top: 1.5rem;
+
+    background-color: white;
+}
+
+header div.logo-container img {
+    height: auto;
+    width: var(--logo-about-us-content-width);
+    max-width: 100%;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav li {
+    float: left;
+}
+
+header nav li a {
+    display: block;
+    padding: 8px;
+}
+
+/* About us section */
+
+main section.about-us {
+    background-image: pink;
+    z-index: -1;
+}
+
+
+main section.about-us .container {
+    background: url('../imgs/landing-version-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: var(--landing-image-height);
+
+    position: relative;
+}
+
+main section.about-us .about-us-container {
+    background: yellow;
+    width: var(--logo-about-us-container-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0.75rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 5%;
+}
+
+
+main section.about-us .about-us-container h1 {
+    width: var(--logo-about-us-content-width);
+}
+
+main section.about-us .about-us-container p {
+    width: var(--logo-about-us-content-width);
+}
+
+main section.about-us .about-us-container button {
+    width: var(--logo-about-us-content-width);
+}
+
+main section.about-us div.separator {
+    height: var(--landing-separator-height);
+    background: pink;
+}
+
+
+
+
+
+/* header {
+    display: flex;
+    min-height: 48px;
+    max-height: 100px;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+  }
+  header div {
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+    z-index: 99;
+  }
+  header nav {
+    background-color: var(--navbar-menu-color);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+    box-shadow: var(--navbar-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+  }
+  ::slotted(a) {
+    color: var(--navbar-link-color);
+    padding: 0.5rem 0 0.5rem 1rem;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+  ::slotted(a:hover) {
+    color: var(--navbar-link-hover-color) !important;
+  }
+  .logo::slotted(a) {
+      color: #333333;
+      font-family: 'Dosis', Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      max-height: 100px;
+      padding: 0;
+      text-decoration: none;
+  }
+  .animate {
+    transition: all 1s ease-in-out !important;
+  }
+  ::slotted(.nav-link--active) {
+    color: var(--navbar-link-active-color) !important;
+  } */

@@ -8,13 +8,24 @@ html {
 
 body {
     margin: 0;
-    font-family: "Titillium Web",sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-style: normal;
     font-weight: 200;
     color: var(--font-color);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
+}
+
+.container {
+    margin: auto;
+    padding: var(--container-padding);
 }
