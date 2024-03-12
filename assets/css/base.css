@@ -10,7 +10,7 @@ body {
     margin: 0;
     font-family: "Ubuntu";
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--font-color);
 }
 
@@ -34,7 +34,16 @@ h1 {
     color: var(--color-brand-dark);
 }
 
+b {
+    font-weight: 500;
+    font-size: 1.05em;
+}
+
 .container {
     margin: auto;
     padding: var(--container-padding);
+}
+
+.color-green {
+    color: var(--color-green);
 }

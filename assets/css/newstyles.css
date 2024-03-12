@@ -5,6 +5,8 @@
 @import url("root-font-size-media.css");
 @import url("container-max-width-media.css");
 
+@import url("footer.css");
+
 /* Animation */
 
 hr.animated {
@@ -37,7 +39,7 @@ header .container {
 
 header div.logo-container {
     float: left;
-    width: var(--logo-about-us-container-width);
+    width: var(--logo-container-width);
     height: 100%;
 
     background-color: var(--bg-color);
@@ -59,10 +61,38 @@ header div.logo-container .image-container {
     background-color: var(--bg-color);
 }
 
+@media (max-width: 991.98px) {
+    header div.logo-container .image-container {
+        padding: 0rem;
+    }
+
+    header div.logo-container {
+        width: var(--logo-container-width-mobile);
+    }
+}
+
 header div.logo-container img {
     width: 100%;
     height: auto;
     max-width: 100%;
+}
+
+header div.logo-container img.logo-vertical {
+    display: none;
+}
+
+header div.logo-container img.logo-horizontal {
+    display: inline;
+}
+
+@media (max-width: 991.98px) {
+    header div.logo-container img.logo-vertical {
+        display: inline;
+    }
+
+    header div.logo-container img.logo-horizontal {
+        display: none;
+    }
 }
 
 header nav {
@@ -75,8 +105,8 @@ header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 0.6rem;
-    margin-right: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.6rem;
     overflow: hidden;
 }
 
@@ -97,7 +127,7 @@ header nav li.active a {
     text-underline-offset: 3px;
     text-decoration: underline;
     text-decoration-color: var(--color-green);
-    text-decoration-thickness: 10px;
+    text-decoration-thickness: 3px;
 }
 
 header nav li:hover a {
@@ -122,7 +152,7 @@ main section.about-us .container {
 }
 
 main section.about-us .about-us-container {
-    width: var(--logo-about-us-container-width);
+    width: var(--about-us-container-width);
 
     display: flex;
     justify-content: center;
@@ -139,6 +169,12 @@ main section.about-us .about-us-container {
     border-right: 1px solid lightgray;
 }
 
+@media (max-width: 991.98px) {
+    main section.about-us .about-us-container {
+        width: var(--about-us-container-width-mobile);
+    }
+}
+
 main section.about-us .about-us-container h1 {
     width: 100%;
 
@@ -149,12 +185,17 @@ main section.about-us .about-us-container .hr-container {
     width: 100%;
 }
 
-
-main section.about-us .about-us-container p {
+main section.about-us .about-us-container p:first-of-type {
     width: 100%;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-top: var(--content-margin);
+    margin-bottom: 0.25rem;
 }
+
+main section.about-us .about-us-container p:last-of-type {
+    width: 100%;
+    margin-bottom: var(--content-margin);
+}
+
 
 main section.about-us .about-us-container .button-container {
     width: 100%;
@@ -165,7 +206,7 @@ main section.about-us .about-us-container button {
     font-weight: lighter;
     background: var(--bg-color);
     border: solid 1px var(--color-brand-dark);
-    padding: 0.7em;
+    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
     font-size: 0.9rem;
     float: right;
 
@@ -195,9 +236,7 @@ main section.highlight {
 
 main section.highlight .container {
     display: grid;
-    padding: 9rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 4rem 8rem 4rem 8rem;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -208,24 +247,28 @@ main section.highlight .container {
 
 main section.highlight .container .highlight-container {
     grid-area: highlightcontent;
-    margin: 3rem;
+    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-/* main section.highlight .container .highlight-container h2 {
-} */
+main section.highlight .container .highlight-container h2 {
+    font-weight: 300;
+}
+
+main section.highlight .container .highlight-container h3 {
+    font-weight: 300;
+}
+
+main section.highlight .container .highlight-container b {
+    font-weight: 600;
+}
 
 main section.highlight .container .highlight-container hr {
     margin: 1rem;
 }
-
-/* 
-main section.highlight .container .highlight-container p{
-} */
-
 
 main section.highlight .container img.top-right {
     grid-area: topright;
@@ -239,6 +282,246 @@ main section.highlight .container img.bottom-left {
     height: auto;
 }
 
+@media (max-width: 991.98px) {
+
+    main section.highlight .container {
+        padding: 2rem;
+    }
+
+    main section.highlight .container .highlight-container {
+        margin: 1rem;
+    }
+}
+
+/* Section Services */
+main section.services {
+    background-color: var(--bg-color-light);
+}
+
+main section.services h2 {
+    margin-top: 1.5rem;
+}
+
+main section.services .flex-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section.services .service-item {
+    --content-padding: 1rem;
+
+    height: auto;
+    width: 20rem;
+    max-width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    margin-left: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    main section.services .flex-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main section.services .service-item {
+        height: auto;
+        width: 80%;
+        max-width: 100%;
+    }
+
+    /* Add some spaces between columned services items */
+    main section.services .service-item:first-of-type {
+        margin-bottom: 2rem;
+    }
+}
+
+main section.services .service-item img {
+    height: auto;
+    width: 100%;
+}
+
+main section.services .service-item h3 {
+    margin-top: 1rem;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}
+
+main section.services .service-item p {
+    margin-top: calc(var(--content-margin) / 2);
+    margin-bottom: calc(var(--content-margin) / 2);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    font-size: 0.8em;
+    flex-grow: 1;
+}
+
+main section.services .service-item .button-container {
+    margin-bottom: 1rem;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}
+
+main section.services .service-item button {
+    font-weight: lighter;
+    background-color: var(--bg-color);
+    border: 0;
+    font-size: 0.7em;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.services .service-item button i {
+    font-size: 0.5rem;
+    margin-left: .3rem;
+    color: var(--color-green);
+}
+
+/* Section People */
+main section.people {
+    background-color: var(--bg-color-green);
+}
+
+main section.people h2 {
+    margin-top: 1.5rem;
+}
+
+main section.people .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    section.our-focus .flex-wrapper {}
+}
+
+main section.people .flex-wrapper .switch-person {
+    padding: .5rem;
+    width: 3.5rem;
+}
+
+main section.people .flex-wrapper .switch-person-img {
+    width: 100%;
+    height: auto;
+}
+
+main section.people .flex-wrapper .person-info-container {
+    display: flex;
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
+
+main section.people .flex-wrapper .person-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: var(--bg-color);
+    padding: 2rem;
+}
+
+main section.people .flex-wrapper .person-info-container .person-img {
+    height: 100%;
+    width: auto;
+    max-width: 60%;
+}
+
+main section.people .flex-wrapper .person-info-container .person-info {
+    margin-left: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    main section.people .flex-wrapper .switch-person {
+        padding: .2rem;
+        width: 3rem;
+    }
+
+    main section.people .flex-wrapper .person-info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    main section.people .flex-wrapper .person-info-container .person-img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    main section.people .flex-wrapper .person-info-container .person-info {
+        margin-left: 0;
+    }
+}
+
+/* Flip the right-open icon to left-open */
+main section.people .flex-wrapper .flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+main section.people .person-info-container h3 {
+    margin-top: 1rem;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}
+
+main section.people .person-info-container p {
+    margin-top: calc(var(--content-margin) / 2);
+    margin-bottom: var(--content-margin);
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    font-size: 0.8em;
+    flex-grow: 1;
+}
+
+main section.people .person-info-container .button-container {
+    margin-bottom: 1rem;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+main section.people .person-info-container .social-link {
+    color: var(--color-brand-dark);
+    float: left;
+}
+
+main section.people .person-info-container .button {
+    flex-grow: 1;
+}
+
+main section.people .person-info-container button {
+    font-weight: lighter;
+    background-color: var(--bg-color);
+    border: 0;
+    font-size: 0.7em;
+    float: right;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.people .person-info-container button i {
+    font-size: 0.5rem;
+    margin-left: .3rem;
+    color: var(--color-green);
+}
 
 /* header {
     display: flex;

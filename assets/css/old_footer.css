@@ -1,7 +1,8 @@
 footer {
-    background-color: var(--bg-color);
-    color: var(--color-brand-dark);
+    background-color: white;
+    color: var(--background-color);
     font-size: 0.875rem;
+    /* padding-top: 2rem; */
 }
 
 footer .container {
@@ -9,17 +10,16 @@ footer .container {
     padding-bottom: calc(var(--container-padding) / 2);
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas:
-        "header contactUs"
-        "header info"
-        "sitemap info"
-        "social info"
-        "copyright copyright";
+    grid-template-areas: 
+      "header hiring"
+      "sitemap hiring"
+      "social hiring"
+      "copyright copyright";
 }
 
 footer a {
     text-decoration: none;
-    color: var(--color-brand-dark);
+    color: var(--background-color);
 }
 
 footer .grid-item {
@@ -30,41 +30,27 @@ footer .header-grid-item {
     grid-area: header;
     padding: 0;
 }
-
-footer .sitemap-grid-item {
-    grid-area: sitemap;
-}
-
+footer .sitemap-grid-item { grid-area: sitemap; }
 footer .social-grid-item {
     grid-area: social;
     font-size: 2em;
 }
-
-footer .contact-us-grid-item {
-    grid-area: contactUs;
-    padding: 0;
-    margin-left: 5rem;
-}
-
-footer .info-grid-item {
-    grid-area: info;
+footer .hiring-grid-item {
+    grid-area: hiring;
+    font-size: 1.2em;
     margin: auto;
-    margin-left: 5rem;
+    text-align: center;
 }
-
 footer .copyright-grid-item {
     margin-top: 1.2rem;
     grid-area: copyright;
     font-size: 0.75em;
-    border-top: var(--color-brand-dark) solid 1px;
-    text-align: center;
+    border-top: var(--background-color) solid 1px;
 }
-
 footer .copyright-grid-item a {
     font-weight: 700;
-    color: var(--color-brand-dark);
+    color: var(--background-color);
 }
-
 footer .copyright-grid-item a:hover {
     text-decoration: underline;
 }

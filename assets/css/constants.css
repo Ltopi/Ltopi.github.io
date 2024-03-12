@@ -2,18 +2,25 @@
     /* Section sizes */
     --nav-height: 7.5rem;
     --landing-image-height: 30.5rem;
-    --landing-separator-height: 6.4rem;
-    --logo-about-us-container-width: 40%;
+    --landing-separator-height: 4rem;
+    --logo-container-width: 40%;
+    --logo-container-width-mobile: 30%;
+    --about-us-container-width: 40%;
+    --about-us-container-width-mobile: 75%;
     --logo-about-us-content-width: 85%;
 
     /* Colors */
     --bg-color: #FEFEFF;
-    --bg-color-light: #EDEDF9;
-    --bg-color-dark: #F7F8FC;
+    --bg-color-dark: #EDEDF9;
+    --bg-color-light: #F7F8FC;
     --bg-color-green: #F2F9F9;
     --color-brand-dark: #23214B;
     --color-green: #07A6B7;
     --font-color: #141227;
+
+    /* Margins */
+    /* Used for spacing headers/actions and content(text) */
+    --content-margin: 1.5rem;
 
 
 

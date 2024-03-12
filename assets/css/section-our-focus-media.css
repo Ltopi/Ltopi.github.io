@@ -23,9 +23,9 @@ section.our-focus .flex-wrapper .flex-item {
     display: grid;
     grid-template-columns: var(--indentation-of-first-header) auto;
     grid-template-rows: var(--header-2-bottom-spacing) auto;
-    grid-template-areas: 
-      "focus-icon header"
-      "focus-icon description";
+    grid-template-areas:
+        "focus-icon header"
+        "focus-icon description";
     margin-top: 1em;
 }
 
