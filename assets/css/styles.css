@@ -138,7 +138,7 @@ header nav li:hover a {
 /* About us section */
 
 main section.about-us .container {
-    background: url('../imgs/landing-version-1.jpg');
+    background: url('../imgs/landing-version-1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -527,7 +527,7 @@ main section.people .person-info-container a.button i {
 /* Detail pages */
 
 main div.splash .container {
-    background: url('../imgs/landing-version-1.jpg');
+    background: url('../imgs/landing-version-1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
