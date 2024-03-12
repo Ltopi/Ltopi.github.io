@@ -13,7 +13,7 @@ hr.animated {
     width: 1.5rem;
     margin: 0;
     animation: expand .5s ease-in-out;
-    border: 5px solid var(--color-green);
+    border: 0.15rem solid var(--color-green);
 }
 
 @keyframes expand {
@@ -203,7 +203,7 @@ main section.about-us .about-us-container .button-container {
 }
 
 main section.about-us .about-us-container button {
-    font-weight: lighter;
+    font-weight: 200;
     background: var(--bg-color);
     border: solid 1px var(--color-brand-dark);
     padding: 0.5rem 0.6rem 0.5rem 0.6rem;
@@ -367,7 +367,7 @@ main section.services .service-item .button-container {
 }
 
 main section.services .service-item button {
-    font-weight: lighter;
+    font-weight: 200;
     background-color: var(--bg-color);
     border: 0;
     font-size: 0.7em;
@@ -505,7 +505,7 @@ main section.people .person-info-container .button {
 }
 
 main section.people .person-info-container button {
-    font-weight: lighter;
+    font-weight: 200;
     background-color: var(--bg-color);
     border: 0;
     font-size: 0.7em;
