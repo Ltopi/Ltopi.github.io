@@ -1,0 +1,78 @@
+@import url("google-fonts.css");
+@import url("fontello-fonts.css");
+@import url("old-constants.css");
+@import url("base.css");
+@import url("root-font-size-media.css");
+@import url("container-max-width-media.css");
+@import url("section-our-focus-media.css");
+@import url("section-capabilities-media.css");
+@import url("section-cta-media.css");
+@import url("footer.css");
+@import url("animations.css");
+
+.container {
+    margin: auto;
+    padding: var(--container-padding);
+}
+
+b {
+    font-size: 1.1em;
+}
+
+nav .container {
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    height: var(--header-height);
+}
+
+nav .logo {
+    height: 100%;
+    width: auto;
+}
+
+header {
+    background-color: var(--intro-background-color);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    color: var(--color-for-white-fonts);
+
+    font-size: 1.4rem;
+}
+
+header h1 {
+    line-height: 1.3em;
+}
+
+header p {
+    font-size: 0.8em;
+}
+
+header .fragments {
+    margin-top: 1rem;
+    font-size: 0.8em;
+    max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    header .fragments {
+        font-size: 0.6em;
+    }
+}
+
+/* Privacy policy */
+main.privacy-policy {
+    background-color: var(--color-for-white-fonts);
+    font-size: 0.75em;
+}
+
+main.privacy-policy h1,
+main.privacy-policy h2,
+main.privacy-policy h3 {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+.p-indent {
+    margin-left: 1em;
+}
