@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="gr">
 
 <head>
   <meta charset="utf-8">
@@ -29,6 +29,9 @@
 
   <link rel="stylesheet" href="assets/css/styles.css">
 
+  <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+  <link rel="preload" fetchpriority="high" as="image" href="/assets/imgs/landing-version-1.webp" type="image/webp">
+
 </head>
 
 <body>
@@ -38,16 +41,16 @@
         <div class="image-container">
           <img class="logo-horizontal" width="495" height="109" src="assets/imgs/esteem-logo.svg"
             alt="Esteem property and finance services">
-          <img class="logo-vertical" width="312" height="284" src="assets/imgs/(website)esteem logo-01.svg"
+          <img class="logo-vertical" width="312" height="284" src="assets/imgs/esteem-logo-vertical.svg"
             alt="Esteem property and finance services">
         </div>
       </div>
       <nav>
         <ul>
-          <li class="active"><a href="/#home">Home</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#people">People</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li class="active"><a href="/#home" data-18n="nav_home"></a></li>
+          <li><a href="/#services" data-18n="nav_services"></a></li>
+          <li><a href="/#people" data-18n="nav_people"></a></li>
+          <li><a href="/#contact" data-18n="nav_contact"></a></li>
         </ul>
       </nav>
     </div>
@@ -56,20 +59,16 @@
     <section class="about-us">
       <div class="container">
         <div class="about-us-container">
-          <h1>About us</h1>
+          <h1 data-18n="about_us_section_title"></h1>
           <div class="hr-container">
             <hr class="animated" />
           </div>
-          <p>At <b>esteem</b>, we&#39;re more than just an appraisal firm – we&#39;re your trusted partner
-            in navigating the complexities of real estate value. Our team of seasoned appraisers, financial
-            analysts and
-            civil engineers is dedicated to delivering tailored solutions that meet the unique needs of
-            each client.
+          <p data-18n="about_us_section_first_p">
           </p>
-          <p>When you choose <b>esteem</b>, you&#39;re choosing a partner who is invested in your success.</p>
+          <p data-18n="about_us_section_second_p"></p>
           <div class="button-container">
             <a class="button" href="/#contact">
-              Contact<i aria-hidden=" true" class="icon-right-open-1"></i>
+              <span data-18n="about_us_contact_button_text"></span><i aria-hidden=" true" class="icon-right-open-1"></i>
             </a>
           </div>
         </div>
@@ -79,10 +78,9 @@
     <section class="highlight">
       <div class="container">
         <div class="highlight-container">
-          <h2>What sets us apart is our commitment to <b>innovation</b> and <b>integrity</b>.</h2>
+          <h2 data-18n="highlight_section_h2"></h2>
           <hr class="animated" />
-          <h3>We leverage cutting-edge technology and industry best practices to ensure that our
-            appraisals are not only precise but also forward-thinking.</h3>
+          <h3 data-18n="highlight_section_h3"></h3>
         </div>
         <img class="top-right" width="54" height="54" src="assets/imgs/top-right.svg" alt="top right">
         <img class="bottom-left" width="54" height="54" src="assets/imgs/bottom-left.svg" alt="bottom left">
@@ -90,36 +88,30 @@
     </section>
     <section id="services" class="services">
       <div class="container">
-        <h2>Services</h2>
+        <h2 data-18n="services_section_title"></h2>
         <hr class="animated" />
         <div class="flex-wrapper">
           <div class="service-item">
             <img class="service-img" width="427" height="396" src="assets/imgs/financial_services.webp"
               alt="Piggy bank">
-            <h3>Financial</h3>
-            <p>
-              We specialize in comprehensive financial services for real estate ventures, conducting
-              feasibility studies and providing expert advice on technical matters to guide investment
-              decisions throughout Greece.
+            <h3 data-18n="services_section_financial_title"></h3>
+            <p data-18n="services_section_financial_paragraph">
             </p>
             <div class="button-container">
               <a class="button" href="/services.html#financial">
-                <span>learn more</span><i aria-hidden="true" class="icon-right-open-1"></i>
+                <span data-18n="learn_more_link"></span><i aria-hidden="true" class="icon-right-open-1"></i>
               </a>
             </div>
           </div>
           <div class="service-item">
             <img class="service-img" width="427" height="396" src="assets/imgs/property_services.webp"
               alt="House image">
-            <h3>Property</h3>
-            <p>
-              We offer tailored property appraisal services, including advanced commercial appraisals,
-              precise valuation for financial institutions, tax compliance, insurance coverage decisions,
-              and legal matters.
+            <h3 data-18n="services_section_property_title"></h3>
+            <p data-18n="services_section_property_paragraph">
             </p>
             <div class="button-container">
               <a class="button" href="/services.html#property">
-                <span>learn more</span><i aria-hidden="true" class="icon-right-open-1"></i>
+                <span data-18n="learn_more_link"></span><i aria-hidden="true" class="icon-right-open-1"></i>
               </a>
             </div>
           </div>
@@ -128,7 +120,7 @@
     </section>
     <section id="people" class="people">
       <div class="container">
-        <h2>People</h2>
+        <h2 data-18n="people_section_title"></h2>
         <hr class="animated" />
         <div class="flex-wrapper">
           <div class="switch-person">
@@ -139,12 +131,8 @@
             <img class="person-img" width="427" height="396" src="assets/imgs/person-placeholder.webp"
               alt="House image">
             <div class="person-info">
-              <h3>George Georgious Jr</h3>
-              <p>
-                We offer tailored property appraisal services, including advanced commercial appraisals,
-                precise valuation for financial institutions, tax compliance, insurance coverage
-                decisions,
-                and legal matters.
+              <h3 data-18n="person_name"></h3>
+              <p data-18n="person_description">
               </p>
               <div class="button-container">
                 <a href="https://www.facebook.com/" alt="Facebook" arial-label="Facebook" target="_blank"
@@ -153,7 +141,7 @@
                   rel="noopener noreferrer"><i aria-hidden="true" class="icon-linkedin-rect"></i></a>
                 <div class="button">
                   <a class="button" href="/people.html">
-                    <span>learn more</span><i aria-hidden="true" class="icon-right-open-1"></i>
+                    <span data-18n="learn_more_link"></span><i aria-hidden="true" class="icon-right-open-1"></i>
                   </a>
                 </div>
               </div>
@@ -171,10 +159,10 @@
     <div class="container">
       <h2 class="grid-item header-grid-item"><b>esteem</b></h2>
       <p class="grid-item sitemap-grid-item">
-        <a href="/#home">Home</a> ·
-        <a href="/#services">Services</a> ·
-        <a href="/#people">People</a> ·
-        <a href="/#contact">Contact</a>
+        <a href="/#home" data-18n="nav_home"></a> ·
+        <a href="/#services" data-18n="nav_services"></a> ·
+        <a href="/#people" data-18n="nav_people"></a> ·
+        <a href="/#contact" data-18n="nav_contact"></a>
       </p>
       <div class="grid-item social-grid-item">
         <a href="https://www.facebook.com/" alt="Facebook" arial-label="Facebook" target="_blank"
@@ -182,16 +170,15 @@
         <a href="https://www.linkedin.com/" alt="LinkedIn" arial-label="LinkedIn" target="_blank"
           rel="noopener noreferrer"><i aria-hidden="true" class="icon-linkedin-rect"></i></a>
       </div>
-      <h3 class="grid-item contact-us-grid-item"><b>Contact us!</b></h3>
+      <h3 class="grid-item contact-us-grid-item" data-18n="footer_contact_us"></h3>
       <div class="grid-item info-grid-item">
-        <p>New York, 4140 Parker Rd.
-          Allentown, New Mexico 31134</p>
-        <p>+1 (555) 656 77 89</p>
+        <p data-18n="footer_address"></p>
+        <p>(+31) 216 0700442</p>
         <br />
         <p class="color-green"><b><span>info</span>@sample.com</b></p>
       </div>
       <small class="grid-item copyright-grid-item">
-        © Copyright 2024 Esteem − All Rights Reserved · <a href="/privacy-policy.html">Privacy Policy</a>
+        <span data-18n="footer_copyright"></span> · <a href="/privacy-policy.html" data-18n="footer_privacy_policy"></a>
       </small>
     </div>
   </footer>

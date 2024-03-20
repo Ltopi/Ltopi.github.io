@@ -39,6 +39,10 @@ b {
     font-size: 1.05em;
 }
 
+p {
+    font-size: 0.8em;
+}
+
 .container {
     margin: auto;
     padding: var(--container-padding);

@@ -11,7 +11,6 @@ footer .container {
     grid-template-rows: auto;
     grid-template-areas:
         "header contactUs"
-        "header info"
         "sitemap info"
         "social info"
         "copyright copyright";
@@ -43,6 +42,7 @@ footer .social-grid-item {
 footer .contact-us-grid-item {
     grid-area: contactUs;
     padding: 0;
+    margin: auto;
     margin-left: 5rem;
 }
 
